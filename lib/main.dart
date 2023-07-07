@@ -11,51 +11,54 @@ class MyApp extends StatelessWidget{
       home: Scaffold(
         appBar: AppBar(
           title: Text('Col Row'),
+          backgroundColor: Colors.red,
         ),
-        body: Column(
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Container(
-                  padding: EdgeInsets.all(20),
                   color: Colors.blue,
-                  child: Text('hello 1'),
+                  padding: EdgeInsets.all(20),
+                  child: Text('Hello 1'),
                 ),
                 Container(
+                  color: Colors.red,
                   padding: EdgeInsets.all(30),
-                  color: Colors.green,
-                  child: Text('hello 2'),
+                  child: Text('Hello 2'),
                 ),
                 Container(
+                  color: Colors.green,
                   padding: EdgeInsets.all(40),
-                  color: Colors.purple,
-                  child: Text('hello 3'),
-                ),
+                  child: Text('Hello 3'),
+                )
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
+            VerticalDivider(),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: EdgeInsets.all(20),
                   color: Colors.blue,
-                  child: Text('hello 1'),
+                  padding: EdgeInsets.all(20),
+                  child: Text('Hello 1'),
                 ),
                 Container(
+                  color: Colors.red,
                   padding: EdgeInsets.all(30),
-                  color: Colors.green,
-                  child: Text('hello 2'),
+                  child: Text('Hello 2'),
                 ),
                 Container(
+                  color: Colors.green,
                   padding: EdgeInsets.all(40),
-                  color: Colors.purple,
-                  child: Text('hello 3'),
-                ),
+                  child: Text('Hello 3'),
+                )
               ],
-            ),
+            )
           ],
         )
       ),
