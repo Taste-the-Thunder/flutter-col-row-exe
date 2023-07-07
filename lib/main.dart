@@ -60,7 +60,12 @@ class MyApp extends StatelessWidget{
               ],
             )
           ],
-        )
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
+        floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          child: Text('click'),
+        ),
       ),
     );
   }
